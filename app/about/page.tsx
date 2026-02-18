@@ -36,7 +36,7 @@ export default function AboutPage() {
           <p className="text-sm font-medium uppercase tracking-[0.3em] text-accent">Who We Are</p>
           <h1 className="mt-4 font-serif text-5xl font-bold text-foreground md:text-6xl lg:text-7xl">About Us</h1>
           <p className="mt-6 max-w-2xl text-pretty text-xl leading-relaxed text-muted-foreground">
-            Learn about our mission, our story, and the people who make Lebbu Kale Heywet Church a vibrant community of faith.
+            Learn about our mission, our story, and the people who make Lebu Kale Heywet Church a vibrant community of faith.
           </p>
         </div>
       </section>
@@ -45,8 +45,8 @@ export default function AboutPage() {
       <section className="bg-background py-24 lg:py-32 animate-fade-in">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl bg-gradient-to-br from-accent/5 to-accent/10 p-10 shadow-md lg:p-16">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/20">
+            <div className="border border-border bg-background p-10 lg:p-16">
+              <div className="flex h-16 w-16 items-center justify-center bg-accent/20">
                 <Target className="h-8 w-8 text-accent" />
               </div>
               <h2 className="mt-6 font-serif text-3xl font-bold text-foreground">Our Mission</h2>
@@ -54,8 +54,8 @@ export default function AboutPage() {
                 We exist to worship God, make disciples through teaching and fellowship, and serve our community with compassion and integrity. Our mission is to see every member grow in their relationship with Christ and to be a light in our city.
               </p>
             </div>
-            <div className="rounded-2xl bg-gradient-to-br from-accent/5 to-accent/10 p-10 shadow-md lg:p-16">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent/20">
+            <div className="border border-border bg-background p-10 lg:p-16">
+              <div className="flex h-16 w-16 items-center justify-center bg-accent/20">
                 <Eye className="h-8 w-8 text-accent" />
               </div>
               <h2 className="mt-6 font-serif text-3xl font-bold text-foreground">Our Vision</h2>
@@ -74,8 +74,8 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif text-4xl font-bold text-foreground md:text-5xl">Our Core Values</h2>
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {values.map((value) => (
-              <div key={value.label} className="flex items-start gap-5 rounded-2xl bg-background p-8 shadow-md transition-all hover:shadow-xl lg:p-10">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <div key={value.label} className="flex items-start gap-5 border border-border bg-background p-8 lg:p-10">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center bg-accent/10">
                   <value.icon className="h-6 w-6 text-accent" />
                 </div>
                 <div>
@@ -110,8 +110,8 @@ export default function AboutPage() {
           <h2 className="mt-3 font-serif text-4xl font-bold text-foreground md:text-5xl">Church Leadership</h2>
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {leadership.map((leader) => (
-              <div key={leader.name} className="rounded-2xl bg-background p-8 text-center shadow-md transition-all hover:shadow-xl lg:p-10">
-                <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent/70 font-serif text-2xl font-bold text-white shadow-lg">
+              <div key={leader.name} className="border border-border bg-background p-8 text-center lg:p-10">
+                <div className="mx-auto flex h-24 w-24 items-center justify-center bg-foreground font-serif text-2xl font-bold text-background">
                   {leader.name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
                 </div>
                 <h3 className="mt-5 text-xl font-bold text-foreground">{leader.name}</h3>

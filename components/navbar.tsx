@@ -39,7 +39,7 @@ export function Navbar() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <span className="font-serif text-2xl font-semibold tracking-tight text-foreground">
-              Lebbu Kale
+              Lebu Kale
             </span>
           </Link>
 
@@ -61,12 +61,12 @@ export function Navbar() {
                     <ChevronDown className="h-4 w-4" />
                   </Link>
                   {dropdownOpen && (
-                    <div className="absolute left-0 top-full w-56 rounded-xl border border-border bg-background p-2 shadow-xl">
+                    <div className="absolute left-0 top-full w-56 border border-border bg-background p-2 shadow-lg">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block rounded-lg px-4 py-2.5 text-base text-muted-foreground transition-colors hover:bg-accent/10 hover:text-foreground"
+                          className="block px-4 py-2.5 text-base text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                         >
                           {child.label}
                         </Link>
@@ -93,7 +93,7 @@ export function Navbar() {
             >
               Prayer
             </button>
-            <Button asChild size="sm" className="rounded-full bg-foreground px-6 text-background hover:bg-foreground/90">
+            <Button asChild size="sm" className="rounded-none bg-foreground px-6 text-background hover:bg-foreground/90">
               <Link href="/visit">Visit Us</Link>
             </Button>
             <button
@@ -124,7 +124,7 @@ export function Navbar() {
                 setPrayerOpen(true);
                 setMobileOpen(false);
               }}
-              className="mt-4 w-full rounded-full border-2 border-foreground py-3 text-center text-base font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+              className="mt-4 w-full border border-foreground py-3 text-center text-base font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
             >
               Submit Prayer Request
             </button>

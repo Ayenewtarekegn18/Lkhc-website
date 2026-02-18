@@ -33,9 +33,9 @@ export function NewsletterForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email"
         required
-        className="rounded-full border-2 border-foreground bg-background text-lg"
+        className="rounded-none border border-foreground bg-background text-lg"
       />
-      <Button type="submit" className="shrink-0 rounded-full bg-foreground px-10 text-lg text-background hover:bg-foreground/90 hover:scale-105 transition-transform">
+      <Button type="submit" className="shrink-0 rounded-none bg-foreground px-10 text-lg text-background hover:bg-foreground/90">
         Subscribe
       </Button>
     </form>

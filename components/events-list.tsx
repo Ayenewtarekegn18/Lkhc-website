@@ -22,7 +22,7 @@ export function EventsList() {
     <div>
       <div className="mb-12 flex items-center justify-between">
         <h2 className="font-serif text-3xl font-bold text-foreground">Upcoming Events</h2>
-        <div className="flex overflow-hidden rounded-full border-2 border-border">
+        <div className="flex border border-border">
           <button
             onClick={() => setView("list")}
             className={`flex items-center gap-2 px-6 py-3 text-base transition-colors ${view === "list" ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground"}`}
@@ -43,9 +43,9 @@ export function EventsList() {
       {view === "list" ? (
         <div className="flex flex-col gap-4">
           {sortedEvents.map((event) => (
-            <Link key={event.slug} href={`/events/${event.slug}`} className="group flex flex-col gap-6 rounded-2xl bg-background p-6 shadow-md transition-all hover:scale-[1.02] hover:shadow-xl sm:flex-row sm:items-center sm:justify-between">
+            <Link key={event.slug} href={`/events/${event.slug}`} className="group flex flex-col gap-6 border-b border-border bg-background p-6 transition-colors hover:bg-muted/50 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex gap-6">
-                <div className="flex h-20 w-20 shrink-0 flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent/70 text-background shadow-md">
+                <div className="flex h-20 w-20 shrink-0 flex-col items-center justify-center bg-foreground text-background">
                   <span className="text-2xl font-bold leading-none">{new Date(event.date).getDate()}</span>
                   <span className="text-xs uppercase tracking-wide">{new Date(event.date).toLocaleDateString("en-US", { month: "short" })}</span>
                 </div>
@@ -69,9 +69,9 @@ export function EventsList() {
               <h3 className="mb-6 font-serif text-2xl font-bold text-foreground">{month}</h3>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {monthEvents.map((event) => (
-                  <Link key={event.slug} href={`/events/${event.slug}`} className="group rounded-2xl bg-background p-8 shadow-md transition-all hover:scale-105 hover:shadow-xl">
+                  <Link key={event.slug} href={`/events/${event.slug}`} className="group border border-border bg-background p-8 transition-colors hover:bg-accent/5">
                     <div className="flex items-center gap-2">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/10">
+                      <div className="flex h-8 w-8 items-center justify-center bg-accent/10">
                         <Calendar className="h-4 w-4 text-accent" />
                       </div>
                       <span className="text-base text-muted-foreground">

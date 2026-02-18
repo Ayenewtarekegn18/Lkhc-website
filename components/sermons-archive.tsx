@@ -33,13 +33,13 @@ export function SermonsArchive() {
             placeholder="Search sermons..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="rounded-full border-2 border-border bg-background pl-12 text-lg"
+            className="rounded-none border border-border bg-background pl-12 text-lg"
           />
         </div>
         <select
           value={speakerFilter}
           onChange={(e) => setSpeakerFilter(e.target.value)}
-          className="rounded-full border-2 border-border bg-background px-6 py-3 text-base text-foreground"
+          className="rounded-none border border-border bg-background px-6 py-3 text-base text-foreground"
         >
           <option value="all">All Speakers</option>
           {speakers.map((s) => (
@@ -49,7 +49,7 @@ export function SermonsArchive() {
         <select
           value={seriesFilter}
           onChange={(e) => setSeriesFilter(e.target.value)}
-          className="rounded-full border-2 border-border bg-background px-6 py-3 text-base text-foreground"
+          className="rounded-none border border-border bg-background px-6 py-3 text-base text-foreground"
         >
           <option value="all">All Series</option>
           {series.map((s) => (
@@ -66,7 +66,7 @@ export function SermonsArchive() {
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((sermon, index) => (
-            <Link key={sermon.slug} href={`/sermons/${sermon.slug}`} className="group overflow-hidden rounded-2xl bg-background shadow-md transition-all hover:shadow-xl hover:scale-105">
+            <Link key={sermon.slug} href={`/sermons/${sermon.slug}`} className="group overflow-hidden border border-border bg-background transition-colors hover:bg-accent/5">
               <div className="relative overflow-hidden">
                 <img 
                   src={`https://images.unsplash.com/photo-${1507003211169 + index}?w=600&q=80`}
@@ -74,7 +74,7 @@ export function SermonsArchive() {
                   className="aspect-video w-full object-cover transition-transform group-hover:scale-110"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[1px] transition-all group-hover:bg-black/50">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-transform group-hover:scale-110">
+                  <div className="flex h-16 w-16 items-center justify-center bg-white/20 backdrop-blur-sm">
                     <Play className="h-6 w-6 fill-white text-white" />
                   </div>
                 </div>

@@ -1,20 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Ysabeau } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({
+// Google Font – change the import and variable name to switch fonts.
+// Use variable: "--font-sans" so Tailwind/globals don't need updating.
+const ysabeau = Ysabeau({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-sans",
+  display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Lebbu Kale Heywet Church | A Community of Faith, Worship & Love",
+  title: "Lebu Kale Heywet Church | A Community of Faith, Worship & Love",
   description:
-    "Welcome to Lebbu Kale Heywet Church in Addis Ababa. Join us for worship, fellowship, and spiritual growth. Sunday Service at 3:00 PM.",
+    "Welcome to Lebu Kale Heywet Church in Addis Ababa. Join us for worship, fellowship, and spiritual growth. Sunday Service at 3:00 PM.",
 };
 
 export const viewport: Viewport = {
@@ -29,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={ysabeau.variable}>
       <body className="font-sans antialiased">
         <Navbar />
         <main>{children}</main>

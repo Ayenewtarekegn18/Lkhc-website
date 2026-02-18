@@ -35,13 +35,13 @@ export function MinistryJoinForm({ ministryName }: { ministryName: string }) {
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <Label htmlFor="join-name" className="text-base text-foreground">Full Name</Label>
-        <Input id="join-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required className="rounded-xl border-2 border-border text-lg" />
+        <Input id="join-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required className="rounded-none border border-border text-lg" />
       </div>
       <div className="flex flex-col gap-2">
         <Label htmlFor="join-phone" className="text-base text-foreground">Phone Number</Label>
-        <Input id="join-phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+251 ..." required className="rounded-xl border-2 border-border text-lg" />
+        <Input id="join-phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+251 ..." required className="rounded-none border border-border text-lg" />
       </div>
-      <Button type="submit" className="mt-2 rounded-full bg-foreground py-6 text-lg text-background hover:scale-105 hover:bg-foreground/90 transition-transform">
+      <Button type="submit" className="mt-2 rounded-none bg-foreground py-6 text-lg text-background hover:bg-foreground/90">
         Join Ministry
       </Button>
     </form>

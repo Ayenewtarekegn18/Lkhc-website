@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts are now handled by Next.js next/font/google - see app/layout.tsx */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -28,7 +30,7 @@
     --chart-3: 205 50% 40%;
     --chart-4: 0 0% 60%;
     --chart-5: 205 40% 75%;
-    --radius: 1rem;
+    --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 10%;
     --sidebar-primary: 0 0% 5%;
@@ -37,8 +39,7 @@
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 0 0% 90%;
     --sidebar-ring: 205 75% 60%;
-    --font-sans: var(--font-inter);
-    --font-serif: var(--font-playfair);
+    /* --font-sans is set by next/font on <html> via layout.tsx */
   }
 }
 

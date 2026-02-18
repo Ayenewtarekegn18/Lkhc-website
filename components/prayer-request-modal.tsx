@@ -64,7 +64,7 @@ export function PrayerRequestModal({ open, onOpenChange }: PrayerRequestModalPro
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your name"
                 required
-                className="rounded-xl border-2 border-border text-lg"
+                className="rounded-none border border-border text-lg"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -75,7 +75,7 @@ export function PrayerRequestModal({ open, onOpenChange }: PrayerRequestModalPro
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
-                className="rounded-xl border-2 border-border text-lg"
+                className="rounded-none border border-border text-lg"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -87,10 +87,10 @@ export function PrayerRequestModal({ open, onOpenChange }: PrayerRequestModalPro
                 placeholder="Share your prayer request..."
                 rows={4}
                 required
-                className="rounded-xl border-2 border-border text-lg"
+                className="rounded-none border border-border text-lg"
               />
             </div>
-            <Button type="submit" className="rounded-full bg-foreground py-6 text-lg text-background hover:scale-105 hover:bg-foreground/90 transition-transform">
+            <Button type="submit" className="rounded-none bg-foreground py-6 text-lg text-background hover:bg-foreground/90">
               Submit Prayer Request
             </Button>
           </form>

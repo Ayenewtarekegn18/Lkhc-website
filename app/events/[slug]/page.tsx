@@ -65,10 +65,10 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
                   </div>
                 </div>
                 <div className="mt-8 flex flex-col gap-3">
-                  <Button className="w-full rounded-full bg-foreground py-6 text-lg text-background hover:scale-105 hover:bg-foreground/90 transition-transform">
+                  <Button className="w-full rounded-none bg-foreground py-6 text-lg text-background hover:bg-foreground/90">
                     Register for Event
                   </Button>
-                  <Button variant="outline" className="w-full rounded-full border-2 border-foreground py-6 text-lg text-foreground hover:scale-105 hover:bg-foreground hover:text-background transition-transform">
+                  <Button variant="outline" className="w-full rounded-none border border-foreground py-6 text-lg text-foreground hover:bg-foreground hover:text-background">
                     Add to Calendar
                   </Button>
                 </div>

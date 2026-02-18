@@ -87,8 +87,8 @@ export default function GivePage() {
           <h2 className="mt-3 font-serif text-4xl font-bold text-foreground md:text-5xl">Giving Methods</h2>
           <div className="mt-16 grid gap-6 sm:grid-cols-3">
             {givingMethods.map((method) => (
-              <div key={method.title} className="rounded-2xl bg-background p-8 text-center shadow-md transition-all hover:shadow-xl lg:p-12">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-accent/10">
+              <div key={method.title} className="border border-border bg-background p-8 text-center lg:p-12">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center bg-accent/10">
                   <method.icon className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="mt-6 text-2xl font-bold text-foreground">{method.title}</h3>

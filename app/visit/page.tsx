@@ -43,7 +43,7 @@ export default function VisitPage() {
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-5 w-5 shrink-0 text-accent" />
                   <div>
-                    <p className="text-base font-medium text-foreground">Lebbu Kale Heywet Church</p>
+                    <p className="text-base font-medium text-foreground">Lebu Kale Heywet Church</p>
                     <p className="text-sm text-muted-foreground">Addis Ababa, Ethiopia</p>
                   </div>
                 </div>
@@ -58,12 +58,12 @@ export default function VisitPage() {
                   <Mail className="mt-1 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <p className="text-base font-medium text-foreground">Email</p>
-                    <a href="mailto:info@lebbukaleheywet.org" className="text-sm text-muted-foreground transition-colors hover:text-foreground">info@lebbukaleheywet.org</a>
+                    <a href="mailto:info@Lebukaleheywet.org" className="text-sm text-muted-foreground transition-colors hover:text-foreground">info@Lebukaleheywet.org</a>
                   </div>
                 </div>
               </div>
               {/* Map Placeholder */}
-              <div className="mt-8 overflow-hidden rounded-2xl">
+              <div className="mt-8 overflow-hidden border border-border">
                 <img 
                   src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" 
                   alt="Church location map"
@@ -75,14 +75,14 @@ export default function VisitPage() {
                   href="https://wa.me/251911000000"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-4 text-base font-medium text-background transition-all hover:scale-105 hover:opacity-90"
+                  className="inline-flex items-center gap-2 bg-foreground px-8 py-4 text-base font-medium text-background transition-opacity hover:opacity-90"
                 >
                   <Phone className="h-5 w-5" />
                   WhatsApp Us
                 </a>
                 <a
                   href="tel:+251911000000"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-foreground px-8 py-4 text-base font-medium text-foreground transition-all hover:scale-105 hover:bg-foreground hover:text-background"
+                  className="inline-flex items-center gap-2 border border-foreground px-8 py-4 text-base font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
                 >
                   <Phone className="h-5 w-5" />
                   Call Us
@@ -101,8 +101,8 @@ export default function VisitPage() {
           <h2 className="mt-3 font-serif text-4xl font-bold text-foreground md:text-5xl">What to Expect</h2>
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {whatToExpect.map((item) => (
-              <div key={item.title} className="flex items-start gap-4 rounded-2xl bg-background p-8 shadow-md transition-all hover:shadow-xl lg:p-10">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <div key={item.title} className="flex items-start gap-4 border border-border bg-background p-8 lg:p-10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-accent/10">
                   <CheckCircle2 className="h-6 w-6 text-accent" />
                 </div>
                 <div>

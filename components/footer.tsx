@@ -25,7 +25,7 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Church Info */}
           <div>
-            <p className="font-serif text-3xl font-semibold tracking-tight">Lebbu Kale</p>
+            <p className="font-serif text-3xl font-semibold tracking-tight">Lebu Kale</p>
             <p className="mt-1 text-sm tracking-wide opacity-60">Heywet Church</p>
             <p className="mt-6 text-sm leading-relaxed opacity-60">
               A community of faith, worship, and love. Growing in Christ, serving our city.
@@ -39,11 +39,11 @@ export function Footer() {
                 +251 911 000 000
               </a>
               <a
-                href="mailto:info@lebbukaleheywet.org"
+                href="mailto:info@Lebukaleheywet.org"
                 className="flex items-center gap-2 text-base opacity-60 transition-opacity hover:opacity-100"
               >
                 <Mail className="h-5 w-5" />
-                info@lebbukaleheywet.org
+                info@Lebukaleheywet.org
               </a>
               <div className="flex items-center gap-2 text-base opacity-60">
                 <MapPin className="h-5 w-5 shrink-0" />
@@ -107,7 +107,7 @@ export function Footer() {
               href="https://wa.me/251911000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-full border-2 border-background/20 px-6 py-3 text-base transition-all hover:scale-105 hover:bg-background/10"
+              className="mt-6 inline-flex items-center gap-2 border border-background/20 px-6 py-3 text-base transition-colors hover:bg-background/10"
             >
               <Phone className="h-5 w-5" />
               WhatsApp Us
@@ -116,7 +116,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-background/10 pt-8 text-center text-xs opacity-40">
-          <p>Lebbu Kale Heywet Church. All rights reserved.</p>
+          <p>Lebu Kale Heywet Church. All rights reserved.</p>
         </div>
       </div>
     </footer>
